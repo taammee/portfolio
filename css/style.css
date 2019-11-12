@@ -283,9 +283,6 @@ a.scroll_down svg {
 }
 
 
-
-
-
 /* contact */
 .contact {
   color: #fff; text-align: center;
@@ -302,8 +299,6 @@ a.scroll_down svg {
 .contact li.address:before {background-image: url('../images/svg/placeholder.svg');}
 .contact li.mail:before {background-image: url('../images/svg/envelope.svg');}
 .contact li.copy {color: #ffb900; opacity: 0.7; font-size: 0.9em; margin-top: 10px;}
-
-
 
 
 @media all and (max-width: 1300px) {
@@ -326,7 +321,7 @@ a.scroll_down svg {
   }
 }
 @media all and (max-width: 540px) {
-  .message p i:before {bottom: auto; top: 35px;}
+  .message p i:before {bottom: auto; top: 26px;}
   .resume .resume_list dl dd span {display: block;}
 }
 
