@@ -293,7 +293,6 @@ a.scroll_down svg {
   background: #222;
 }
 .contact a {color: #fff;}
-
 .contact li {margin: 5px 0;}
 .contact li:before {
   content: ''; display: inline-block; vertical-align: middle;
