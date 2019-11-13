@@ -181,7 +181,7 @@ a.scroll_down svg {
   -o-transition: border-color 0.2s ease-in-out;
   transition: border-color 0.2s ease-in-out;
 }
-.fol_list > li:hover {border-color: #ffb900;}
+.fol_list > li.on {border-color: #ffb900;}
 .fol_list > li img {
   width: 100%; max-width: none;
 	-webkit-transition: opacity 1s, transform 1s;
@@ -189,7 +189,7 @@ a.scroll_down svg {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-.fol_list > li:hover img {
+.fol_list > li.on img {
   opacity: 0.1;
   transform: scale3d(1.1,1.1,1);
 }
@@ -210,10 +210,10 @@ a.scroll_down svg {
   transition: all 0.3s cubic-bezier(.33,.66,.66,1);
 }
 
-.fol_list > li:hover .hover h2:before {
+.fol_list > li.on .hover h2:before {
   width: 100%;
 }
-.fol_list > li:hover .hover h2 {opacity: 1;  box-shadow: inset 0 -13px 0 rgba(255, 185, 0, 0.7);}
+.fol_list > li.on .hover h2 {opacity: 1;  box-shadow: inset 0 -13px 0 rgba(255, 185, 0, 0.7);}
 
 .fol_list > li .hover .content {
   font-size: 0.9em; font-weight: 200;
@@ -233,10 +233,10 @@ a.scroll_down svg {
   margin: 5px 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-100%,0,0);
-  transform: translate3d(-100%,0,0);
+  -webkit-transform: translate3d(-200%,0,0);
+  transform: translate3d(-200%,0,0);
 }
-.fol_list > li:hover .hover .content li {
+.fol_list > li.on .hover .content li {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
@@ -257,20 +257,20 @@ a.scroll_down svg {
 	-webkit-transition-delay: 0.05s;
 	transition-delay: 0.05s;
 }
-.fol_list > li:hover .hover .content li:first-child {
+.fol_list > li.on .hover .content li:first-child {
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
   line-height: 1.8;
 }
-.fol_list > li:hover .hover .content li:nth-of-type(2) {
+.fol_list > li.on .hover .content li:nth-of-type(2) {
 	-webkit-transition-delay: 0.05s;
 	transition-delay: 0.05s;
 }
-.fol_list > li:hover .hover .content li:nth-of-type(3) {
+.fol_list > li.on .hover .content li:nth-of-type(3) {
 	-webkit-transition-delay: 0.1s;
 	transition-delay: 0.1s;
 }
-.fol_list > li:hover .hover .content li:nth-of-type(4) {
+.fol_list > li.on .hover .content li:nth-of-type(4) {
 	-webkit-transition-delay: 0.15s;
 	transition-delay: 0.15s;
 }

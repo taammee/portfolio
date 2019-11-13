@@ -9,11 +9,6 @@ $(document).ready(function(){
 	$("table tr").find(" > td:first").addClass("first");
 	$("table tr").find(" > td:last").addClass("last");
 
-	$('a').on('click touchend', function(e){
-		var el = $(this);
-		var link = el.attr('herf');
-		window.location = link;
-	});
 	$('.scroll_down').on('click',function(){
 		event.preventDefault();
     var target = $(this).attr('href');
@@ -25,6 +20,7 @@ $(document).ready(function(){
 
     return false;
   });
+
 	// top button
 	$(window).scroll( function(){
 		if ($(window).scrollTop() > 20){
@@ -76,6 +72,12 @@ $(document).ready(function(){
 	});
 
 	$('.fol_list > li').each( function(){
+		$(this).hover(
+	    function(e){ $(this).addClass('on'); }, // over
+	    function(e){ $(this).removeClass('on'); }  // out
+		);
+
+
 			var folList = true;
 			var $target = $(this);
 			// set
