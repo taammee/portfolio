@@ -9,6 +9,11 @@ $(document).ready(function(){
 	$("table tr").find(" > td:first").addClass("first");
 	$("table tr").find(" > td:last").addClass("last");
 
+	$('a').on('click touchend', function(e){
+		var el = $(this);
+		var link = el.attr('herf');
+		window.location = link;
+	});
 	$('.scroll_down').on('click',function(){
 		event.preventDefault();
     var target = $(this).attr('href');
@@ -37,7 +42,7 @@ $(document).ready(function(){
 			scrollTop : 0
 			}, 600);
 	});
-	
+
 	// message scroll
 	$(window).bind("scroll resize", function () {
 		var oriScroll = $(this).scrollTop();
