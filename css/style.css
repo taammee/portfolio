@@ -64,6 +64,7 @@ button#mTop:after {transform: skewY(45deg); right: 10px;}
 }
 .message p:first-of-type {
   animation-duration: 1000ms;
+	margin-top: -100px;
 }
 .message p span {
   position: relative;
