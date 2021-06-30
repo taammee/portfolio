@@ -156,7 +156,7 @@ a.scroll_down svg {
 .resume .resume_list dl dd {margin-bottom: 5px;}
 .resume .resume_list dl dd span {
   color: #fff;
-  display: inline-block; width: 177px;
+  display: inline-block; width: 207px;
 	box-shadow: inset 0 -24px 0 #222222;
   padding: 0 3px; margin-right: 10px; box-sizing: border-box;
 }
@@ -183,6 +183,7 @@ a.scroll_down svg {
   transition: border-color 0.2s ease-in-out;
 }
 .fol_list > li.on {border-color: #ffb900;}
+
 .fol_list > li img {
   width: 100%; max-width: none;
 	-webkit-transition: opacity 1s, transform 1s;
@@ -281,6 +282,10 @@ a.scroll_down svg {
 .fol_list > li .hover .content dt {
   display: inline-block; width: 90px;
   margin-right: 3px;
+}
+
+.fol_list > li.noImg .hover h2 {
+  opacity: 1;
 }
 
 
